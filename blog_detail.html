@@ -1,0 +1,10 @@
+<h1>{{ data.caption }}</h1>
+<h1>{{ data.content }}</h1>
+
+<ul>
+{% for tag in data.tags %}
+        <li>
+            {{ tag.tag_name }}
+        </li>
+{% endfor %}
+</ul>
